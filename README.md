@@ -6,7 +6,7 @@ Made with Ruby on Rails.
 
 ### Setup
 
-1. Clone Repo `$ git clone github.com/leroidejesa/rails-wk1-review.git`
+1. Clone Repo `$ git clone https://github.com/leroidejesa/rails-portfolio-v0.0.1.git`
 
 2. Create/Seed Database `$ rake db:setup`
 
