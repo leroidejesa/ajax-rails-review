@@ -12,6 +12,7 @@ class ProjectsController < ApplicationController
     @skill = Skill.find(params[:skill_id])
     @project = @skill.projects.new(projects_params)
     if @project.save
+      flash[:notice] = "Project added!"
       redirect_to skill_path(@project.skill)
     else
       render :new
@@ -32,6 +33,7 @@ class ProjectsController < ApplicationController
     @skill = Skill.find(params[:skill_id])
     @project = @skill.projects.find(params[:id])
     @project.update(projects_params)
+    flash[:notice] = "Project updated!"
     redirect_to skill_path(@skill)
   end
 
@@ -39,6 +41,7 @@ class ProjectsController < ApplicationController
     @skill = Skill.find(params[:skill_id])
     @project = @skill.projects.find(params[:id])
     @project.destroy
+    flash[:notice] = "Project deleted!"
     redirect_to skill_path(@skill)
   end
 

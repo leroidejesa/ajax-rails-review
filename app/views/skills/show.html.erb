@@ -1,32 +1,36 @@
-<img src="<%= @skill.svg_url %>">
-<h1><%= @skill.name %></h1>
-<p><%= @skill.description %></p>
+<div class="row">
+    <img src="<%= @skill.svg_url %>" class="skill-logo">
+</div>
+<div class="row">
+  <h1><%= @skill.name %></h1>
+  <p><%= @skill.description %></p>
+<hr>
 
 
+  <% if @skill.projects.any? %>
+    <h4>Here are my projects utilizing this skill:</h4>
 
-<% if @skill.projects.any? %>
-  <h4>Here are my projects utilizing this skill:</h4>
+    <ul>
+      <% @skill.projects.each do |project| %>
+        <li>
+          <%= link_to project.name, skill_project_path(@skill, project) %> |
+          <a href="<%= project.link %>">view git repository</a> |
+          <%= link_to "Edit", edit_skill_project_path(@skill, project) %> |
+          <%= link_to "Delete", skill_project_path(@skill, project),
+                                   :data => {:confirm => "Are you sure?",
+                                                  :method => "delete"} %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>There are no projects yet!</p>
+  <% end %>
 
-  <ul>
-    <% @skill.projects.each do |project| %>
-      <li>
-        <%= link_to project.name, skill_project_path(@skill, project) %> |
-        <a href="<%= project.link %>">view git repository</a> |
-        <%= link_to "Edit", edit_skill_project_path(@skill, project) %> |
-        <%= link_to "Delete", skill_project_path(@skill, project),
-                                 :data => {:confirm => "Are you sure?",
-                                                :method => "delete"} %>
-      </li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>There are no projects yet!</p>
-<% end %>
+  <%= render template: "projects/new" %>
 
-<%= render template: "projects/new" %>
-
-<p><%= link_to "Edit Skill", edit_skill_path(@skill) %></p>
-<p><%= link_to "Delete", skill_path(@skill),
-                         :data => {:confirm => "You sure?",
-                                   :method => "delete"} %></p>
-<p><%= link_to 'Return', skills_path %></p>
+  <p><%= link_to "Edit Skill", edit_skill_path(@skill) %></p>
+  <p><%= link_to "Delete", skill_path(@skill),
+                           :data => {:confirm => "You sure?",
+                                     :method => "delete"} %></p>
+  <p><%= link_to 'Return', skills_path %></p>
+</div>

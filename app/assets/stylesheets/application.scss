@@ -14,3 +14,38 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// .each-svg {
+//   max-width: 100px;
+//   padding-bottom: 14px;
+// }
+
+.skill-container {
+  padding: 15px;
+}
+
+.skill-container img {
+  // max-width: 100px;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.skill-container img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    // -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    // -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    // box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+}
+
+.skill-container img:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.skill-logo {
+  max-height: 300px;
+}

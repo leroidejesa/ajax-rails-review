@@ -1,4 +1,4 @@
-class SkillsController < ApplicationController
+class SkillsController < ApplicationController  
   def index
     @skills = Skill.all
   end
@@ -15,6 +15,7 @@ class SkillsController < ApplicationController
   def create
     @skill = Skill.new(skill_params)
     if @skill.save
+      flash[:notice] = "Skill added!"
       redirect_to  skills_path
     else
       render :new
@@ -28,6 +29,7 @@ class SkillsController < ApplicationController
   def update
     @skill = Skill.find(params[:id])
     if @skill.update(skill_params)
+      flash[:notice] = "Skill updated!"
       redirect_to skills_path
     else
       render :edit
@@ -37,6 +39,7 @@ class SkillsController < ApplicationController
   def destroy
     @skill = Skill.find(params[:id])
     @skill.destroy
+    flash[:notice] = "Skill deleted!"
     redirect_to skills_path
   end
 
