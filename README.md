@@ -8,7 +8,7 @@ Made with Ruby on Rails.
 
 1. Clone Repo `$ git clone github.com/leroidejesa/rails-wk1-review.git`
 
-2. Create Database `$ rake db:setup`
+2. Create/Seed Database `$ rake db:setup`
 
 3. Run PostgreSQL `$ postgres`
 
