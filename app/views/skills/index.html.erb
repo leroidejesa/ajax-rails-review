@@ -3,8 +3,10 @@
 <ul>
   <% @skills.each do |skill| %>
     <li>
-      <img src='https://<%= skill.svg_url %>'><br>
+      <img src='<%= skill.svg_url %>'><br>
       <%= link_to skill.name, skill_path(skill) %><br>
     </li>
   <% end %>
 </ul>
+
+<p><%= link_to 'add', new_skill_path %></p>
