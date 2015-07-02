@@ -5,16 +5,21 @@ Completed as an assignment at [Epicodus](www.epicodus.com), Portland, Oregon.
 Made with Ruby on Rails.
 
 ### Setup
-1. Clone Repo
-`$ git clone https://github.com/leroidejesa/rails-wk1-review.git`
 
-2. Create Database
+Clone Repo
+
+`$ git clone github.com/leroidejesa/rails-wk1-review.git`
+
+Create Database
+
 `$ rake db:setup`
 
-3. Run PostgreSQL
+Run PostgreSQL
+
 `$ postgres`
 
-4. Run Server
+Run Server
+
 `$ rails s`
 
-5. Visit `localhost:3000` in your web browser.
+Visit `localhost:3000` in your web browser.
