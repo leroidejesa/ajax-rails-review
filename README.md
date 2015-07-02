@@ -6,20 +6,20 @@ Made with Ruby on Rails.
 
 ### Setup
 
-Clone Repo
+1. Clone Repo
 
 `$ git clone github.com/leroidejesa/rails-wk1-review.git`
 
-Create Database
+2. Create Database
 
 `$ rake db:setup`
 
-Run PostgreSQL
+3. Run PostgreSQL
 
 `$ postgres`
 
-Run Server
+4. Run Server
 
 `$ rails s`
 
-Visit `localhost:3000` in your web browser.
+5. Visit `localhost:3000` in your web browser.
