@@ -18,6 +18,11 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def show
+    # @skill = Skill.find(params[:id])
+    @project = Project.find(params[:id])
+  end
+
   def edit
     @skill = Skill.find(params[:skill_id])
     @project = @skill.projects.find(params[:id])
