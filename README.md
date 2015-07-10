@@ -11,8 +11,9 @@ Email: admin@admin.com
 Password: 11111111 (eight 1's)
 ```
 ### Heroku
-[Preview Now](https://nameless-inlet-8355.herokuapp.com/)
-### Setup
+[View Now](https://nameless-inlet-8355.herokuapp.com/)
+
+### Local Setup
 
 1. Clone Repo `$ git clone https://github.com/leroidejesa/rails-portfolio-v0.0.1.git`
 
