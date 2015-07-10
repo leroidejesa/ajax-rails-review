@@ -531,8 +531,14 @@
       "/Users/leroidejesa/Documents/epicodus/rails-portfolio/config/routes.rb": [
         1,
         1,
+        null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        null,
         null,
         1,
         1,
@@ -766,6 +772,7 @@
         null,
         null,
         1,
+        1,
         null,
         1,
         0,
@@ -776,6 +783,14 @@
         null,
         null,
         1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/leroidejesa/Documents/epicodus/rails-portfolio/app/controllers/projects_controller.rb": [
@@ -833,6 +848,6 @@
         null
       ]
     },
-    "timestamp": 1436556582
+    "timestamp": 1436566522
   }
 }

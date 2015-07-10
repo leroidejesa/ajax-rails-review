@@ -8,10 +8,35 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+
+
+<nav class="fixed-nav-bar">
+  <%= link_to "Leroi Dejesa", '/', class: "leroi" %>
+  <div class="right-nav">
+    <% if current_user %>
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "nav-link" %>
+    <% else %>
+      <%= link_to 'Login', new_user_session_path, class: "nav-link" %>
+    <% end %>
+  </div>
+</nav>
+
+  <!-- <section class="content"> -->
+    <!-- <div class="description">
+      <h1>Hello World!</h1>
+      <p class="summary">A fixed-position (or "sticky") top navigation bar. Scroll this page to see the top navigation bar stay in place.</p>
+      <a class="button" href="//sixrevisions.com/css/fixed-navigation-bar/">Read the tutorial</a>
+      <a class="button" href="//github.com/sixrevisions/fixed-navigation-bar">View Source on GitHub</a>
+    </div> -->
+  <!-- </section> -->
+
+
+
+  <div class="flashes">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </div>
   <%= yield %>
-</div>
+
 </body>
 </html>

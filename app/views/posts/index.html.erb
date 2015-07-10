@@ -1,12 +1,14 @@
-<ul>
+
   <% @posts.each do |post| %>
-
-    <%= post.title %> <br>
-    <%= post.content %> <br>
-    <%= distance_of_time_in_words(post.created_at, Time.now) %> ago<br>
-    <%= link_to post.comments.count('text', :distinct => true).to_s + " Comments", post_path(post.id) %><br>
-    <% if user_admin %>hello<%= link_to "Edit", edit_post_path(post) %><%end%>
-    <% if user_admin %><%= link_to "Delete", post_path(post), method: :delete %><%end%>
-
+    <div class="home-scroll">
+      <span class="post-time"><%= distance_of_time_in_words(post.created_at, Time.now) %> ago</span>
+      <h1><%= post.title %></h1>
+      <p><%= post.content %></p>
+      <hr>
+      <%= link_to post.comments.count('text', :distinct => true).to_s + " Comments", post_path(post.id) %>
+      <span class="post-admin-links">
+        <% if user_admin %><%= link_to "Edit", edit_post_path(post) %> |<%end%> 
+        <% if user_admin %><%= link_to "Delete", post_path(post), method: :delete %><%end%>
+      </span>
+    </div>
   <% end %>
-</ul>
