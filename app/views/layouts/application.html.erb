@@ -11,24 +11,33 @@
 
 
 <nav class="fixed-nav-bar">
-  <%= link_to "Leroi Dejesa", '/', class: "leroi" %>
+  <span class="leroi"><%= link_to "Leroi Dejesa", '/' %></span>
+
   <div class="right-nav">
     <% if current_user %>
-      <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "nav-link" %>
+      <span class="nav-link"><%= link_to 'Logout', destroy_user_session_path, method: :delete %></span>
     <% else %>
-      <%= link_to 'Login', new_user_session_path, class: "nav-link" %>
+      <span class="nav-link"><%= link_to 'Login', new_user_session_path %></span>
     <% end %>
   </div>
 </nav>
+<div class="main-links">
+  <!-- <a href="mailto:leroidejesa@gmail.com">Email</a> | <a href="http://linkedin.com/in/leroidejesa"><img src="http://southerndr.com/wp-content/themes/sdr/img/iconmonstr-linkedin-icon.svg" id="linkedin-logo"></a> | <a href="http://github.com/leroidejesa">GitHub</a> -->
+  <span class="link"><%= link_to "Skills", skills_path %></span>
+  <span class="link"><%= link_to "Blog", posts_path %></span>
+</div>
+<% if user_admin %>
+<div class="admin-links">
+  <span class="link"><%= link_to 'New Post', new_post_path %></span>
+</div>
+  <% end %>
 
-  <!-- <section class="content"> -->
-    <!-- <div class="description">
+<!-- still experimenting -->
+  <!-- <section class="content">
+    <div class="description">
       <h1>Hello World!</h1>
-      <p class="summary">A fixed-position (or "sticky") top navigation bar. Scroll this page to see the top navigation bar stay in place.</p>
-      <a class="button" href="//sixrevisions.com/css/fixed-navigation-bar/">Read the tutorial</a>
-      <a class="button" href="//github.com/sixrevisions/fixed-navigation-bar">View Source on GitHub</a>
-    </div> -->
-  <!-- </section> -->
+    </div>
+</section> -->
 
 
 

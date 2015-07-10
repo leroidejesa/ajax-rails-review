@@ -82,6 +82,7 @@ body {
   width: 100%;
   // height: 50px;
   background-color: transparent;
+  // border-bottom: 1px solid white;
 }
 
 .content {
@@ -94,7 +95,7 @@ body {
   border-bottom: 1px solid white;
  }
 
- .leroi {
+ .leroi a{
    color: white;
    float:left;
    font-family: 'Roboto Slab', serif;
@@ -104,12 +105,14 @@ body {
    font-size: 1.5em;
  }
 
- .leroi:hover {
-   color: #993300;
+ .leroi a:hover {
+   color: white;
    text-decoration: none;
+   font-weight: bold;
+
  }
 
- .nav-link {
+ .nav-link a{
    color:white;
    font-family: 'Roboto Slab', serif;
    float:right;
@@ -118,10 +121,25 @@ body {
 
  }
 
- .nav-link:hover {
-   color: #993300;
-   font-family: 'Roboto Slab', serif;
+ .nav-link a:hover {
+   color: white;
    text-decoration: none;
+   font-weight: bold;
+ }
+
+ .link a{
+   color:white;
+   font-family: 'Roboto Slab', serif;
+   float:left;
+  font-size: 1.5em;
+  padding-left: 10px;
+
+ }
+
+ .link a:hover {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
  }
 
 .right-nav {
@@ -147,4 +165,24 @@ body {
 
 .comments {
   margin-left: 15px;
+}
+
+.skill-page a {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+
+.skill-page a:hover {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#linkedin-logo {
+  fill: white;
+}
+
+#add-skill-link {
+  margin-left: 20px;
 }

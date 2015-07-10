@@ -1,20 +1,13 @@
-<div class="jumbotron">
-  <h1>Leroi Dejesa</h1>
-<p>Full-Stack Web Developer</p>
-<a href="mailto:leroidejesa@gmail.com">Email</a> | <a href="http://linkedin.com/in/leroidejesa">LinkedIn</a> | <a href="http://github.com/leroidejesa">GitHub</a>
-</div>
-
-<h3>Skills (<%= link_to 'add', new_skill_path %>)</h3>
-<hr>
-<div class="row">
-
-  <div class="skill-container">
-    <% @skills.each do |skill| %>
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <h4><%= link_to skill.name, skill_path(skill) %></h4>
-        <img class="img-responsive" src="<%= skill.svg_url %>" />
-      </div>
-    <% end %>
+<div class="skill-page">
+  <div class="row">
+    <div class="skill-container">
+      <% @skills.each do |skill| %>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+          <h4><%= link_to skill.name, skill_path(skill) %></h4>
+          <img class="img-responsive" src="<%= skill.svg_url %>" />
+        </div>
+      <% end %>
+    </div>
   </div>
-
+  <% if user_admin %><%= link_to 'Add', new_skill_path, id: "add-skill-link" %><% end %>
 </div>
