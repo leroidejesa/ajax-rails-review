@@ -1,5 +1,11 @@
 # Personal Portfolio version 0.0.2
 
+EDIT: Sorry for the long loading time! Guess I got a little carried away playing with linked images and fonts.
+<br>Also I'm working on getting that annoying top section to disappear after first-time loading the site, among other things.
+
+Thanks for looking!
+
+
 Completed as an assignment at [Epicodus](www.epicodus.com), Portland, Oregon.
 
 Made with Ruby on Rails.
@@ -11,9 +17,10 @@ Email: admin@admin.com
 Password: 11111111 (eight 1's)
 ```
 ### Heroku
-[View Now](https://nameless-inlet-8355.herokuapp.com/)
+[Take a look](https://nameless-inlet-8355.herokuapp.com/)
 
 ### Local Setup
+*(requires Postgres)*
 
 1. Clone Repo `$ git clone https://github.com/leroidejesa/rails-portfolio-v0.0.1.git`
 
@@ -26,3 +33,7 @@ Password: 11111111 (eight 1's)
 5. Run Server `$ rails s`
 
 6. Visit `localhost:3000` in your web browser.
+
+
+<hr>
+© 2015 Leroi Dejesa. All Rights Reserved. License: [MIT](http://opensource.org/licenses/MIT)
