@@ -16,7 +16,7 @@ Password: 11111111 (eight 1's)
 ### Local Setup
 *(requires Postgres)*
 
-1. Clone Repo `$ git clone https://github.com/leroidejesa/rails-portfolio-v0.0.1.git`
+1. Clone Repo `$ git clone https://github.com/leroidejesa/rails-portfolio-v0.0.2.git`
 
 2. Setup Gems `$ bundle install`
 
