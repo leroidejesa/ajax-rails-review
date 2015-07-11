@@ -17,7 +17,7 @@ Password: 11111111 (eight 1's)
 
 1. Clone Repo `$ git clone https://github.com/leroidejesa/rails-portfolio-v0.0.1.git`
 
-2. Set Up Gems `$ bundle install`
+2. Setup Gems `$ bundle install`
 
 3. Create/Seed Database `$ rake db:setup`
 
