@@ -33,3 +33,7 @@ Password: 11111111 (eight 1's)
 5. Run Server `$ rails s`
 
 6. Visit `localhost:3000` in your web browser.
+
+
+<hr>
+© 2015 Leroi Dejesa. All Rights Reserved. License: [MIT](http://opensource.org/licenses/MIT)
