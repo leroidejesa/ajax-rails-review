@@ -26,7 +26,7 @@ Password: 11111111 (eight 1's)
 
 5. Run Server `$ rails s`
 
-6. Visit `localhost:3000` in your web browser.
+6. Visit `localhost:3000` in Chrome.
 
 #### Known Bugs / Future Additions
 * Site doesn't auto-scroll down past top section on several pages
