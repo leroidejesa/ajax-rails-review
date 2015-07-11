@@ -1,11 +1,5 @@
 # Personal Portfolio version 0.0.2
 
-EDIT: Sorry for the long loading time! Guess I got a little carried away playing with linked images and fonts.
-<br>Also I'm working on getting that annoying top section to disappear after first-time loading the site, among other things.
-
-Thanks for looking!
-
-
 Completed as an assignment at [Epicodus](www.epicodus.com), Portland, Oregon.
 
 Made with Ruby on Rails.
