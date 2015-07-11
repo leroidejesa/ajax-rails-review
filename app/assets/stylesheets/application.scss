@@ -264,3 +264,38 @@ body {
 .top-left {
   display: inline;
 }
+
+.splash h1 {
+  padding-top: 180px;
+  color: white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10em;
+}
+
+.splash h3 {
+  // padding-top: 180px;
+  text-align: right;
+  color: white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3.5em;
+  padding-right: 20px;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bold;
+
+}
+
+.splash p {
+  // padding-top: 180px;
+  text-align: right;
+  color: white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  padding-right: 20px;
+  font-family: 'Yantramanav', sans-serif;
+}

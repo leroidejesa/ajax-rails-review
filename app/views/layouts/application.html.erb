@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yantramanav:100' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -38,12 +39,18 @@
 
 
 <!-- still experimenting -->
-  <!-- <section class="content">
-    <div class="description">
-      <h1>Hello World!</h1>
-    </div>
-</section> -->
 
+<% if posts_path %>
+  <section class="content">
+    <div class="splash">
+      <h1>Hello World!</h1>
+      <h3>I'm Leroi :)<br></h3>
+      <p>  I'm a full-stack web developer,<br>
+        writer,<br>
+        & adventurer.</p>
+    </div>
+</section>
+<% end %>
 
 
   <div class="flashes">
