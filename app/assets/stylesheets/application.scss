@@ -100,8 +100,8 @@ body {
    color: white;
    float:left;
    font-family: 'Roboto Slab', serif;
-   margin-top: 3px;
-   margin-left: 3px;
+   margin-top: 2px;
+   margin-left: 5px;
    padding-bottom: 3px;
    font-size: 1.5em;
  }
@@ -116,8 +116,12 @@ body {
  .nav-link a{
    color:white;
    font-family: 'Roboto Slab', serif;
-   float:right;
+   float: right;
+  //  margin-top: -61px;
   font-size: 1.5em;
+  margin-top: 2px;
+  margin-right: 5px;
+  padding-bottom: 3px;
   padding-left: 10px;
 
  }
@@ -128,7 +132,34 @@ body {
    font-weight: bold;
  }
 
- .link a{
+.link1 {
+  margin-left: 15px;
+}
+
+.link2 {
+  margin-left: 15px;
+}
+
+.link3 {
+  margin-left: 15px;
+}
+
+.link a{
+  color:white;
+  font-family: 'Roboto Slab', serif;
+  float:left;
+ font-size: 1.5em;
+ padding-left: 10px;
+
+}
+
+.link a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ .link1 a{
    color:white;
    font-family: 'Roboto Slab', serif;
    float:left;
@@ -137,22 +168,58 @@ body {
 
  }
 
- .link a:hover {
+ .link1 a:hover {
    color: white;
    text-decoration: none;
    font-weight: bold;
  }
 
+ .link2 a{
+   color:white;
+   font-family: 'Roboto Slab', serif;
+   float:left;
+  font-size: 1.5em;
+  padding-left: 10px;
+
+ }
+
+ .link2 a:hover {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+ }
+
+
+  .link3 a{
+    color:white;
+    font-family: 'Roboto Slab', serif;
+    float:left;
+   font-size: 1.5em;
+   padding-left: 10px;
+
+  }
+
+  .link3 a:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
 .right-nav {
-  margin-top: 3px;
+  margin-top: 0px;
   margin-right: 3px;
+}
+
+.main-links {
+  margin-top: 15px;
+  margin-left: 0px;
 }
 
 .flashes {
   margin-top: 25px;
   color: white;
   max-width: 20em;
-  margin-left: 45%;
+  margin-left: 43%;
   margin-right: auto;
 }
 
@@ -167,7 +234,9 @@ body {
 .comments {
   margin-left: 15px;
 }
-
+.skill-page {
+  margin-top: 40px;
+}
 .skill-page a {
   color: white;
   font-family: 'Roboto Slab', serif;
@@ -180,10 +249,18 @@ body {
   font-weight: bold;
 }
 
-#linkedin-logo {
-  fill: white;
-}
-
 #add-skill-link {
   margin-left: 20px;
+}
+
+.logos {
+  max-width: 20px;
+  margin-left: 13px;
+  margin-top: 8px;
+
+  // padding-top: 8px;
+}
+
+.top-left {
+  display: inline;
 }
