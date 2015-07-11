@@ -1,6 +1,6 @@
 # Personal Portfolio version 0.0.2
 
-Completed as an assignment at [Epicodus](www.epicodus.com), Portland, Oregon.
+Completed as an assignment at [Epicodus](http://www.epicodus.com), Portland, Oregon.
 
 Made with Ruby on Rails.
 
