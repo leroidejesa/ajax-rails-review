@@ -64,6 +64,7 @@ body {
   background-color: #FFFFFF;
   padding: 10px;
   margin-bottom: 20px;
+  font-size: 1.2em;
 }
 
 .home-scroll h6 {
@@ -91,7 +92,7 @@ body {
   background: #464646 url(http://i.imgur.com/SqOG61l.jpg) no-repeat center center fixed;
   background-size: cover;
   width: 102%;
-  height: 600px;
+  height: 700px;
   margin-top: -20px;
   border-bottom: 1px solid white;
  }
@@ -266,7 +267,7 @@ body {
 }
 
 .splash h1 {
-  padding-top: 180px;
+  padding-top: 200px;
   color: white;
   max-width: 800px;
   margin-left: auto;
@@ -274,14 +275,15 @@ body {
   font-size: 10em;
 }
 
-.splash h3 {
+.splash h4 {
   // padding-top: 180px;
   text-align: right;
   color: white;
   max-width: 800px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 3.5em;
+  font-size: 3em;
   padding-right: 20px;
   font-family: 'Yantramanav', sans-serif;
   font-weight: bold;
@@ -296,6 +298,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-size: 2em;
-  padding-right: 20px;
+  padding-right: 18px;
   font-family: 'Yantramanav', sans-serif;
 }

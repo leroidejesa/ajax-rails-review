@@ -1,3 +1,4 @@
+<span id="posts">&nbsp;</span>
 
   <% @posts.each do |post| %>
     <div class="home-scroll">
@@ -7,7 +8,7 @@
       <hr>
       <%= link_to post.comments.count('text', :distinct => true).to_s + " Comments", post_path(post.id) %>
       <span class="post-admin-links">
-        <% if user_admin %><%= link_to "Edit", edit_post_path(post) %> |<%end%> 
+        <% if user_admin %><%= link_to "Edit", edit_post_path(post) %> |<%end%>
         <% if user_admin %><%= link_to "Delete", post_path(post), method: :delete %><%end%>
       </span>
     </div>
