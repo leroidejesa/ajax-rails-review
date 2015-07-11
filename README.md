@@ -28,7 +28,7 @@ Password: 11111111 (eight 1's)
 
 6. Visit `localhost:3000` in your web browser.
 
-### Known Bugs / Future Additions
+#### Known Bugs / Future Additions
 * Site doesn't auto-scroll down past top section on several pages
 * Text area in posts/comments doesn't yet allow formatting
 * 'Forgot your password?' link doesn't really work. 
