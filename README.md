@@ -20,9 +20,9 @@ Password: 11111111 (eight 1's)
 
 2. Navigate to project folder and `$ bundle install`
 
-3. Create/Seed Database `$ rake db:setup`
+3. Run PostgreSQL `$ postgres`
 
-4. Run PostgreSQL `$ postgres`
+4. Create/Seed Database `$ rake db:setup`
 
 5. Run Server `$ rails s`
 
