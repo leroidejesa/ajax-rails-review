@@ -1,7 +1,7 @@
 # Personal Portfolio version 0.0.2
 
-EDIT: Sorry for the long loading times! Guess I got carried away with design, plus no database yet :(
-<br>Also I'm working on getting that top image section to disappear after first-time loading page, among other things.
+EDIT: Sorry for the long loading time! Guess I got a little carried away playing with linked images and fonts.
+<br>Also I'm working on getting that annoying top section to disappear after first-time loading the site, among other things.
 
 Thanks for looking!
 
