@@ -1,26 +1,26 @@
+<span id="post">&nbsp;</span>
+
 <div class="home-scroll">
   <span class="post-time"><%= distance_of_time_in_words(@post.created_at, Time.now) %> ago</span>
   <h1><%= @post.title %></h1>
   <p><%= @post.content %></p>
   <hr>
 
-  <% if @post.comments.any? %>
+  <ul id="post_comments">
+    <% if @post.comments.any? %>
+        <% @post.comments.each do |comment| %>
+            <li><%= User.find(comment.user_id).username %> - <%= comment.text %></li>
+        <% end %>
+    <% else %>
+      <p>There are no comments yet.</p>
+    <% end %>
+  </ul>
 
-      <% @post.comments.each do |comment| %>
-          <h6><strong><%= User.find(comment.user_id).username %></strong>
-          <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago</h6>
-          <p class="comments"><%= comment.text %></p>
-      <% end %>
-
-  <% else %>
-    <p>There are no comments yet.</p>
-  <% end %>
-
-  <%= render template: "comments/new" %>
+  <p><%= link_to "Add a comment...", new_post_comment_path(@post), id: "new_comment_link", class: "btn btn-sm btn-info", remote: true %></p>
   <hr>
-  <p><%= link_to "Return to posts", posts_path %>
+  <p><%= link_to "Return to posts", posts_path.concat('#posts') %>
   <span class="post-admin-links">
-    <% if user_admin %><%= link_to "Edit", edit_post_path(@post) %> |<%end%> 
+    <% if user_admin %><%= link_to "Edit", edit_post_path(@post) %> |<%end%>
     <% if user_admin %><%= link_to "Delete", post_path(@post), method: :delete %><%end%>
     </p>
   </span>
