@@ -33,7 +33,7 @@ body {
   font-family: 'Roboto Slab', serif;
   padding: 0px;
   position: relative;
-  background: #FFFFFC url(img.url) no-repeat center center fixed;
+  background: #FFFFFC url() no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -89,7 +89,7 @@ body {
 
 .content {
   position: relative;
-  background: #FFFFFF url(img.url) no-repeat center center fixed;
+  background: #FFFFFF url() no-repeat center center fixed;
   background-size: cover;
   width: 102%;
   height: 700px;
@@ -319,4 +319,24 @@ body {
   color: black;
   padding-left: 10px;
   margin-left: 15px;
+}
+
+.hide-link {
+  padding-left: 10px;
+  margin-left: 15px;
+  padding-bottom: 20px;
+}
+
+.hide-link a{
+  color:red;
+  font-family: 'Roboto Slab', serif;
+  float:left;
+ font-size: 1.3em;
+
+}
+
+.hide-link a:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }

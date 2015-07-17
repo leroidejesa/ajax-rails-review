@@ -14,7 +14,7 @@ describe 'adding an comment path' do
     click_on '0 Comments'
     click_on 'Add a comment...'
 #CAPYBARA CAN'T FIND 'NEW', OF ALL THINGS! UGH
-    fill_in 'New', with: 'lol'
+    fill_in 'Text', with: 'lol'
     click_on 'Create Comment'
     expect(page).to have_content 'lol'
   end

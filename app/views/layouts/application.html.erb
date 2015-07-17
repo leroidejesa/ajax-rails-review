@@ -16,7 +16,7 @@
     <% if current_user %>
       <span class="nav-link"><%= link_to 'Logout', destroy_user_session_path, method: :delete %></span>
     <% else %>
-      <span class="nav-link"><%= link_to 'Login', new_user_session_path %></span>
+      <span class="nav-link"><%= link_to 'Login', new_user_session_path.concat("#login") %></span>
     <% end %>
   </div>
   </div>
@@ -50,7 +50,7 @@
       <!-- <h1>AJAX Code Review</h1> -->
 
       <h4>AJAX Code Review<br></h4>
-      <p>mssg</p>
+
     </div>
 </section>
 <% end %>
