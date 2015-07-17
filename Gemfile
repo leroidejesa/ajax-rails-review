@@ -12,6 +12,8 @@ gem 'capybara'
 gem 'devise', '~> 3.5.1'
 gem "factory_girl_rails"
 gem 'simplecov', require: false
+gem 'poltergeist'
+gem 'database_cleaner'
 
 group :development do
   gem 'byebug'

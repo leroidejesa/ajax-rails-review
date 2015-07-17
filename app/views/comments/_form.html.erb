@@ -2,6 +2,7 @@
 
 <%= form_for [@post, @comment], remote: true do |f| %>
   <div class="form-group">
+    <p><%= f.label :new %></p>
     <%= f.text_area :text %>
   </div>
     <%= f.submit :class => 'btn btn-sm btn-info' %>
