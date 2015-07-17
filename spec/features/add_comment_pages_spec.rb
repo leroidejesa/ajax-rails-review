@@ -13,29 +13,8 @@ describe 'adding an comment path' do
     visit '/'
     click_on '0 Comments'
     click_on 'Add a comment...'
-#CAPYBARA CAN'T FIND 'NEW', OF ALL THINGS! UGH
     fill_in 'Text', with: 'lol'
     click_on 'Create Comment'
     expect(page).to have_content 'lol'
   end
 end
-
-
-
-
-#     user = User.create({username: 'MommaMia', password:'whoayes', password_confirmation:'whoayes', email:'Momma@mia.com'})
-#     category = Category.create(:name => "Period Facts")
-#     question = Question.create(title: 'How many periods?', description:'In my lifetime?', category_id:category.id, user_id: user.id)
-#     comment = Answer.new
-#     visit '/log-in'
-#     fill_in 'username', :with => 'MommaMia'
-#     fill_in 'password', :with => 'whoayes'
-#     click_on 'Log in'
-#     visit '/questions'
-#     click_on 'How many periods?'
-#     click_on "Answer this Question"
-#     fill_in 'answer_description', :with => '200 if you are lucky.'
-#     click_on 'Answer!'
-#     expect(page).to have_content '200 if you are lucky.'
-#   end
-# end
