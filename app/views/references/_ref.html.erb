@@ -1,0 +1,30 @@
+<% @references.each do |ref|%>
+  <div class="each-ref">
+    <ul>
+    <h4><%= ref.name %></h4>
+    <p><%= ref.job_title %></p>
+    <p><%= ref.email %></p>
+    <p><%= ref.phone %></p>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for Reference.new, remote: true do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="form-group">
+    <%= f.label :job_title %>
+    <%= f.text_field :job_title %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="form-group">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+ </div>
+   <%= f.submit %>
+ <% end %>

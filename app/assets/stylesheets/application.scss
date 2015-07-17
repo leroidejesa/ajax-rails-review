@@ -33,7 +33,7 @@ body {
   font-family: 'Roboto Slab', serif;
   padding: 0px;
   position: relative;
-  background: #464646 url(http://i.imgur.com/5djEy8Q.jpg) no-repeat center center fixed;
+  background: #FFFFFC url(img.url) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -84,21 +84,21 @@ body {
   width: 100%;
   // height: 50px;
   background-color: transparent;
-  // border-bottom: 1px solid white;
+  // border-bottom: 1px solid black;
 }
 
 .content {
   position: relative;
-  background: #464646 url(http://i.imgur.com/SqOG61l.jpg) no-repeat center center fixed;
+  background: #FFFFFF url(img.url) no-repeat center center fixed;
   background-size: cover;
   width: 102%;
   height: 700px;
   margin-top: -20px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
  }
 
  .leroi a{
-   color: white;
+   color: black;
    float:left;
    font-family: 'Roboto Slab', serif;
    margin-top: 2px;
@@ -108,14 +108,14 @@ body {
  }
 
  .leroi a:hover {
-   color: white;
+   color: black;
    text-decoration: none;
    font-weight: bold;
 
  }
 
  .nav-link a{
-   color:white;
+   color:black;
    font-family: 'Roboto Slab', serif;
    float: right;
   //  margin-top: -61px;
@@ -128,7 +128,7 @@ body {
  }
 
  .nav-link a:hover {
-   color: white;
+   color: black;
    text-decoration: none;
    font-weight: bold;
  }
@@ -145,8 +145,12 @@ body {
   margin-left: 15px;
 }
 
-.link a{
-  color:white;
+.link0 {
+  margin-left: 15px;
+}
+
+.link0 a{
+  color:black;
   font-family: 'Roboto Slab', serif;
   float:left;
  font-size: 1.5em;
@@ -154,14 +158,14 @@ body {
 
 }
 
-.link a:hover {
-  color: white;
+.link0 a:hover {
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
 
  .link1 a{
-   color:white;
+   color:black;
    font-family: 'Roboto Slab', serif;
    float:left;
   font-size: 1.5em;
@@ -170,13 +174,13 @@ body {
  }
 
  .link1 a:hover {
-   color: white;
+   color: black;
    text-decoration: none;
    font-weight: bold;
  }
 
  .link2 a{
-   color:white;
+   color:black;
    font-family: 'Roboto Slab', serif;
    float:left;
   font-size: 1.5em;
@@ -185,14 +189,14 @@ body {
  }
 
  .link2 a:hover {
-   color: white;
+   color: black;
    text-decoration: none;
    font-weight: bold;
  }
 
 
   .link3 a{
-    color:white;
+    color:black;
     font-family: 'Roboto Slab', serif;
     float:left;
    font-size: 1.5em;
@@ -201,7 +205,7 @@ body {
   }
 
   .link3 a:hover {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
   }
@@ -218,7 +222,7 @@ body {
 
 .flashes {
   margin-top: 25px;
-  color: white;
+  color: black;
   max-width: 20em;
   margin-left: 43%;
   margin-right: auto;
@@ -239,12 +243,12 @@ body {
   margin-top: 40px;
 }
 .skill-page a {
-  color: white;
+  color: black;
   font-family: 'Roboto Slab', serif;
 }
 
 .skill-page a:hover {
-  color: white;
+  color: black;
   font-family: 'Roboto Slab', serif;
   text-decoration: none;
   font-weight: bold;
@@ -268,7 +272,7 @@ body {
 
 .splash h1 {
   padding-top: 200px;
-  color: white;
+  color: black;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -278,7 +282,7 @@ body {
 .splash h4 {
   // padding-top: 180px;
   text-align: right;
-  color: white;
+  color: black;
   max-width: 800px;
   margin-top: 100px;
   margin-left: auto;
@@ -293,11 +297,26 @@ body {
 .splash p {
   // padding-top: 180px;
   text-align: right;
-  color: white;
+  color: black;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   font-size: 2em;
   padding-right: 18px;
   font-family: 'Yantramanav', sans-serif;
+}
+
+.each-ref {
+  color: black;
+  padding-bottom: 10px;
+}
+
+.toggle-ref {
+  display: none;
+}
+
+.form-group {
+  color: black;
+  padding-left: 10px;
+  margin-left: 15px;
 }

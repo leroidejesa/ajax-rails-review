@@ -5,8 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Yantramanav:100' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -32,7 +30,13 @@
     <br>
     <br>
     <h6 class="link3"><%= link_to 'New Post', new_post_path %></h6>
+    <br>
+    <br>
   <% end %>
+  <br>
+      <h6 class="link0"><%= link_to 'Show References', references_path, remote: true, class:'references'%></h6>
+    <div id="ref-form">
+    </div>
   </div>
 
 </nav>
@@ -43,10 +47,10 @@
 <% if posts_path %>
   <section class="content">
     <div class="splash">
-      <h1>Hello World!</h1>
+      <!-- <h1>AJAX Code Review</h1> -->
 
-      <h4>I'm Leroi.<br></h4>
-      <p>& I build web applications :)</p>
+      <h4>AJAX Code Review<br></h4>
+      <p>mssg</p>
     </div>
 </section>
 <% end %>

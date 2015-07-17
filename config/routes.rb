@@ -8,10 +8,14 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments
   end
-  
+
   resources :skills do
     resources :projects
   end
+
+  resources :references
+  get 'references/hide' => 'references#hide'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
