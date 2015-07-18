@@ -1,4 +1,6 @@
-# Personal Portfolio version 0.0.2
+# AJAX Code Review 7/17/15
+
+Don't forget to log in!
 
 Completed as an assignment at [Epicodus](http://www.epicodus.com), Portland, Oregon.
 
@@ -11,12 +13,12 @@ Email: admin@admin.com
 Password: 11111111 (eight 1's)
 ```
 ### Heroku
-[Take a look](https://nameless-inlet-8355.herokuapp.com/)
+Not this time! Sorry Debbie! 
 
 ### Local Setup
 *(requires Postgres)*
 
-1. Clone Repo `$ git clone https://github.com/leroidejesa/rails-portfolio-v0.0.2.git`
+1. Clone Repo `$ git clone https://github.com/leroidejesa/ajax-rails-review.git`
 
 2. Navigate to project folder and `$ bundle install`
 
@@ -28,11 +30,5 @@ Password: 11111111 (eight 1's)
 
 6. Visit `localhost:3000` in Chrome.
 
-#### Known Bugs / Future Additions
-* Site doesn't auto-scroll down past top section on several pages
-* Text area in posts/comments doesn't yet allow formatting
-* 'Forgot your password?' link doesn't really work. 
-* Admin authentication is implemented manually -- would like to try a gem in the future.
-* CSS needs to be refactored in Sass. Not DRY at all
 <hr>
 © 2015 Leroi Dejesa. All Rights Reserved. License: [MIT](http://opensource.org/licenses/MIT)
